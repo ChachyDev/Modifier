@@ -1,0 +1,3 @@
+rootProject.name = 'Modifier'
+
+include ":dsl", ":dsl:injection-point"

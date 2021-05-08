@@ -1,0 +1,16 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+group 'club.chachy'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    api 'org.ow2.asm:asm:9.1'
+    api 'org.ow2.asm:asm-tree:9.1'
+}

@@ -1,0 +1,17 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.0'
+}
+
+group 'club.chachy'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url "https://maven.hackery.site" }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    testImplementation project(":dsl")
+}
