@@ -11,7 +11,7 @@ import java.net.URLClassLoader
  * @author ChachyDev
  * @since 1.0.0
  */
-class TransformableClassLoader : URLClassLoader(emptyArray()) {
+class TransformableClassLoader : ClassLoader() {
     private val isDebugOutputEnabled = System.getProperty("modifier.bytecode.output", "false")?.toBoolean() ?: false
 
     override fun loadClass(name: String?): Class<*> {
