@@ -1,8 +1,6 @@
 package club.chachy.modifier.dsl.invoker
 
-import club.chachy.modifier.dsl.annotation.ModifierExported
 import org.objectweb.asm.Opcodes
-import org.objectweb.asm.tree.AnnotationNode
 import org.objectweb.asm.tree.MethodNode
 
 private var count = 0
@@ -15,9 +13,4 @@ fun invokerNode(method: MethodNode): MethodNode {
     node.desc = method.desc
     count++
     return node
-}
-
-@ModifierExported
-fun test() {
-
 }
